@@ -1,0 +1,64 @@
+body {
+    background-color: #c9c9c9;
+}
+
+.heading {
+    margin-left: 750px;
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    font-size: 40px;
+}
+
+.frame {
+    width: 800px;
+    height: 400px;
+    background: lightblue;
+    border-radius: 30px;
+    box-shadow: gray 0px 0px 5px 5px;
+    margin: 10% auto;
+    position: relative;
+    
+}
+
+.off {
+    width: 95%;
+    height: 335px;
+    background: rgb(48, 47, 47);
+    position: absolute;
+    top: 2%;
+    left: 2.5%;
+    right: 1%;
+    bottom: -0.5%;
+}
+
+.power {
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+}
+
+.show {
+    width: 95%;
+    height: 335px;
+    background: gray;
+    position: absolute;
+    top: 2%;
+    left: 2.5%;
+    right: 1%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.previous {
+    position: absolute;
+    bottom: 5%;
+    left: 5%
+}
+
+.next {
+    position: absolute;
+    bottom: 5%;
+    left: 90%
+}

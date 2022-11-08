@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Television Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div id="application">
+        <h1 class="heading">T.V PROGRAM</h1>
+        <div class="frame">
+            <div v-if="tv_on == true" class="show">
+                <div v-for="(slide, index) in slides">
+                    <iframe :src="slide" v-show="visible == index" width="100%" height="335px"></iframe>
+                </div>
+            </div>
+            <div v-else class="off">
+            </div>
+
+            <div class="power">
+                <button v-on:click="onOff" style="width: 30px; height: 30px; border-radius: 50%"><i class="fa-solid fa-power-off" style="color: red"></i></button>
+            </div>
+            <div class="previous">
+                <button v-on:click="prev" style="width: 30px; height: auto;"><i class="fa-solid fa-backward-fast"></i></button>
+            </div>
+            <div class="next">
+                <button v-on:click="next" style="width: 30px; height: auto;"><i class="fa-solid fa-forward-fast"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="vue.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
