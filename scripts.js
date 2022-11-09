@@ -1,6 +1,6 @@
 // const {createApp} = Vue
 Vue.createApp({
-    data() {
+    data(){
         return {
             tv_on: false,
             slides: [
