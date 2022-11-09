@@ -1,6 +1,5 @@
 var Vue = (function (exports) {
-    'use strict' 
-    ;
+    'use strict' ;
   
     /**
      * Make a map and return a function for checking if a key
@@ -11,7 +10,7 @@ var Vue = (function (exports) {
      */
     function makeMap(str, expectsLowerCase) {
         const map = Object.create(null);
-        const list = str.split(',');
+        const list = str.split(',') ;
         for (let i = 0; i < list.length; i++) {
             map[list[i]] = true;
         }

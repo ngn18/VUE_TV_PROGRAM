@@ -1,7 +1,7 @@
 // const {createApp} = Vue
 Vue.createApp({
     data(){
-        return {
+        return{
             tv_on: false,
             slides: [
                 'https://www.youtube.com/embed/Ha8eVdiWgTA', 
